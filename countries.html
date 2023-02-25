@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #all-countries{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px
+        }
+        .country{
+            border: 2px solid tomato;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="region" type="text" class="px-2" placeholder="search">
+        <button onclick="region()" class="btn btn-primary">search</button>
+    </div>
+    <button id="asia">Asia</button>
+    <button id="africa">Africa</button>
+    <button id="americas">Americas</button>
+    <button id="europe">Europe</button>
+    <button id="oceania">Oceania</button>
+    <button id="all" >All</button>
+
+    <h1>All countries</h1>
+    <section>
+        <div id="country-detail">
+            
+        </div>
+    </section>
+    <section>
+        <div  id="all-countries">
+
+        </div>
+    </section >
+    
+    <script src="./js/countries.js"></script>
+</body>
+</html>
